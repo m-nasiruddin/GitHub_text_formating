@@ -88,3 +88,19 @@ or,
 100. First list item
      - First nested list item
        - Second nested list item
+
+<ul>
+<li>foo
+<ul>
+<li>bar
+<ul>
+<li>baz
+<ul>
+<li>boo</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
