@@ -111,6 +111,7 @@ Ignoring Markdown formatting
 
 Let's rename \*our-new-project\* to \*our-old-project\*.
 
-| foo | bar |
+| abc | def |
 | --- | --- |
-| baz | bim |
+| bar |
+| bar | baz | boo |
