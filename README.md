@@ -110,3 +110,14 @@ Using emoji
 Ignoring Markdown formatting
 
 Let's rename \*our-new-project\* to \*our-old-project\*.
+
+| abc | def |
+| --- | --- |
+
+<table>
+<thead>
+<tr>
+<th>abc</th>
+<th>def</th>
+</tr>
+</thead></table>
