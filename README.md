@@ -111,7 +111,8 @@ Ignoring Markdown formatting
 
 Let's rename \*our-new-project\* to \*our-old-project\*.
 
-→foo→baz→→bim
- 
-<pre><code>foo→baz→→bim
-</code></pre>
+Foo
+-------------------------
+
+Foo
+=
