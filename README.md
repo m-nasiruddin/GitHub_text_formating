@@ -22,6 +22,27 @@ In the words of Abraham Lincoln:
 
 > Pardon my French
 
-> Qoute the selected text in your reply r
+Quoting code
 
-This is my reply
+Use `git status` to list all new or modified files that haven't yet been committed.
+
+Some basic Git commands are:
+```
+git status
+git add
+git commit
+```
+
+or
+
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
