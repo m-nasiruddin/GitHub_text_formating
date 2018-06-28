@@ -54,4 +54,4 @@ Visit https://github.com
 
 This site was built using [GitHub Pages](https://pages.github.com/).
 
-jlord@a5c3785ed8d6a35868bc169f07e40e889087fd2e
+[Contribution guidelines for this project](docs/CONTRIBUTING.md)
