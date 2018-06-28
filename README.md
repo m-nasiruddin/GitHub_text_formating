@@ -22,11 +22,11 @@ In the words of Abraham Lincoln:
 
 > Pardon my French
 
-Quoting code
+Creating and highlighting code blocks
 
 Use `git status` to list all new or modified files that haven't yet been committed.
 
-Some basic Git commands are:
+Fenced code blocks
 ```
 git status
 git add
@@ -41,6 +41,7 @@ function test() {
 }
 ```
 
+Syntax highlighting
 ```ruby
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
