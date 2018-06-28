@@ -103,3 +103,10 @@ Mentioning people and teams
 
 @github/support What do you think about these updates?
 
+Using emoji
+
+@octocat :+1: This PR looks great - it's ready to merge! :shipit:
+
+Ignoring Markdown formatting
+
+Let's rename \*our-new-project\* to \*our-old-project\*.
