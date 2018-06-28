@@ -89,18 +89,12 @@ or,
      - First nested list item
        - Second nested list item
 
-<ul>
-<li>foo
-<ul>
-<li>bar
-<ul>
-<li>baz
-<ul>
-<li>boo</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+Task lists
+
+- [x] Finish my changes
+- [ ] Push my commits to GitHub
+- [ ] Open a pull request
+
+or,
+
+- [ ] \(Optional) Open a followup issue
