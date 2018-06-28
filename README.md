@@ -54,6 +54,4 @@ Visit https://github.com
 
 This site was built using [GitHub Pages](https://pages.github.com/).
 
-https://github.com/jlord/sheetsee.js/issues/26
-
-#26
+jlord@a5c3785ed8d6a35868bc169f07e40e889087fd2e
