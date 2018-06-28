@@ -47,3 +47,13 @@ require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
+
+Links
+
+Visit https://github.com
+
+This site was built using [GitHub Pages](https://pages.github.com/).
+
+https://github.com/jlord/sheetsee.js/issues/26
+
+#26
