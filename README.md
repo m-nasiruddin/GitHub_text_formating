@@ -56,4 +56,18 @@ This site was built using [GitHub Pages](https://pages.github.com/).
 
 [Contribution guidelines for this project](docs/CONTRIBUTING.md)
 
-./ or, ../
+Lists
+
+- George Washington
+- John Adams
+- Thomas Jefferson
+
+or,
+
+- George Washington
+- John Adams
+- Thomas Jefferson
+
+1. James Madison
+2. James Monroe
+3. John Quincy Adams
