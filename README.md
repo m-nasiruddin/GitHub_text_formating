@@ -22,6 +22,6 @@ In the words of Abraham Lincoln:
 
 > Pardon my French
 
-Qoute the selected text in your reply
+> Qoute the selected text in your reply r
 
-r This is my reply
+This is my reply
