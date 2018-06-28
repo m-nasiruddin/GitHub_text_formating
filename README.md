@@ -98,3 +98,8 @@ Task lists
 or,
 
 - [ ] \(Optional) Open a followup issue
+
+Mentioning people and teams
+
+@github/support What do you think about these updates?
+
