@@ -1,0 +1,47 @@
+# Git ignore files
+# ----------------
+# dependency caches
+/node_modules
+/packages
+# compiled code
+.o
+.pyc
+.class
+# build output directories
+/bin
+/out
+/target
+# files generated at runtime
+.log
+.lock
+.tmp
+# hidden system files
+.DS_Store
+Thumbs.db
+# personal IDE config files
+.idea/workspace.xml
+
+# Git ignore patterns
+# -------------------
+# to match directories anywhere in the repository; e.g., logs/debug.log, logs/monday/foo.bar, build/logs/debug.log
+**/logs
+# to match files based on their name and the name of their parent directory; e.g., logs/debug.log, build/logs/debug.log, but not
+logs/build/debug.log
+**/logs/debug.log
+# to matche zero or more characters; e.g., debug.log, foo.log, .log, logs/debug.log
+*.log
+#  ; e.g., 
+#  ; e.g., 
+#  ; e.g., 
+#  ; e.g., 
+#  ; e.g., 
+#  ; e.g., 
+#  ; e.g., 
+#  ; e.g., 
+#  ; e.g., 
+#  ; e.g., 
+#  ; e.g., 
+#  ; e.g., 
+#  ; e.g., 
+#  ; e.g., 
+#  ; e.g., 
