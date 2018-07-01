@@ -25,23 +25,43 @@ Thumbs.db
 # -------------------
 # to match directories anywhere in the repository; e.g., logs/debug.log, logs/monday/foo.bar, build/logs/debug.log
 **/logs
-# to match files based on their name and the name of their parent directory; e.g., logs/debug.log, build/logs/debug.log, but not
-logs/build/debug.log
+# to match files based on their name and the name of their parent directory; e.g., logs/debug.log, build/logs/debug.log, but not logs/build/debug.log
 **/logs/debug.log
 # to matche zero or more characters; e.g., debug.log, foo.log, .log, logs/debug.log
 *.log
-#  ; e.g., 
-#  ; e.g., 
-#  ; e.g., 
-#  ; e.g., 
-#  ; e.g., 
-#  ; e.g., 
-#  ; e.g., 
-#  ; e.g., 
-#  ; e.g., 
-#  ; e.g., 
-#  ; e.g., 
-#  ; e.g., 
-#  ; e.g., 
-#  ; e.g., 
-#  ; e.g., 
+# if a file matches a pattern, but also matches a negating pattern defined later in the file, it will not be ignored; e.g., debug.log, trace.log, but not
+important.log, logs/important.log
+*.log
+!important.log
+# patterns defined after a negating pattern will re-ignore any previously negated files; e.g., debug.log, important/trace.log, but not important/debug.log
+*.log
+!important/*.log
+trace.*
+# to match files only in the repository root; e.g., debug.log, but not logs/debug.log
+/debug.log
+# to match files in any directory; e.g., debug.log, logs/debug.log
+debug.log
+# to match exactly one character; e.g., debug0.log, debugg.log, but not debug10.log
+debug?.log
+# to match a single character from a specified range; e.g., debug0.log, debug1.log, but not debug10.log
+debug[0-9].log
+# to match a single character form the specified set; e.g., debug0.log, debug1.log, but not debug2.log, debug01.log
+debug[01].log
+# to match any character except one from the specified set; e.g., debug2.log, but not debug0.log, debug1.log, debug01.log
+debug[!01].log
+# ranges can be numeric or alphabetic; e.g., debuga.log, debugb.log, but not debug1.log
+debug[a-z].log
+# if you don't append a slash, the pattern will match both files and the contents of directories with that name; e.g., logs, logs/debug.log, logs/latest/foo.bar, build/logs, build/logs/debug.log
+logs
+# appending a slash indicates the pattern is a directory; e.g., logs/debug.log, logs/latest/foo.bar, build/logs/foo.bar, build/logs/latest/debug.log
+logs/
+# wait a minute! Shouldn't logs/important.log be negated in the example on the left? Nope! Due to a performance-related quirk in Git, you can not negate a file that is ignored due to a pattern matching a directory; e.g., logs/debug.log, logs/important.log
+logs/
+!logs/important.log
+# to match zero or more directories; e.g., logs/debug.log, logs/monday/debug.log, logs/monday/pm/debug.log
+logs/**/debug.log
+# wildcards can be used in directory names as well; e.g., logs/monday/debug.log, logs/tuesday/debug.log, but not logs/latest/debug.log
+logs/*day/debug.log
+# patterns specifying a file in a particular directory are relative to the repository root; e.g., logs/debug.log, but not debug.log, build/logs/debug.log
+# ignore the file literally named foo[01].txt
+foo\[01\].txt
